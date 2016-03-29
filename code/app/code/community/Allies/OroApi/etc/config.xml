@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Allies_OroApi>
+            <version>1.0.0</version>
+        </Allies_OroApi>
+    </modules>
+    
+    <global>
+        <models>
+            <allies_oroapi>
+                <class>Allies_OroApi_Model</class>
+            </allies_oroapi>
+            
+            <oro_api>
+                <rewrite>
+                    <sales_order_api>Allies_OroApi_Model_Sales_Order_Api</sales_order_api>
+                    <sales_order_api_v2>Allies_OroApi_Model_Sales_Order_Api_V2</sales_order_api_v2>
+                </rewrite>
+            </oro_api>
+        </models>
+    </global>
+</config>

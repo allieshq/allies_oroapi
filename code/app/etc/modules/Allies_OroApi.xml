@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Allies_OroApi>
+            <codePool>community</codePool>
+            <active>true</active>
+            <depends>
+                <Oro_Api />
+            </depends>
+        </Allies_OroApi>
+    </modules>
+</config>
