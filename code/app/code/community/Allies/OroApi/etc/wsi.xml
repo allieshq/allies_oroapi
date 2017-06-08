@@ -17,6 +17,24 @@
                     <xsd:element name="surcharge_amount" type="xsd:string" minOccurs="0" />
                 </xsd:sequence>
             </xsd:complexType>
+            <xsd:complexType name="salesOrderAddressEntity">
+                <xsd:sequence>
+                    <xsd:element name="street2" type="xsd:string" minOccurs="0" />
+                    <xsd:element name="street3" type="xsd:string" minOccurs="0" />
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="shoppingCartAddressEntity">
+                <xsd:sequence>
+                    <xsd:element name="street2" type="xsd:string" minOccurs="0" />
+                    <xsd:element name="street3" type="xsd:string" minOccurs="0" />
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="customerAddressEntityItem">
+                <xsd:sequence>
+                    <xsd:element name="street2" type="xsd:string" minOccurs="0" />
+                    <xsd:element name="street3" type="xsd:string" minOccurs="0" />
+                </xsd:sequence>
+            </xsd:complexType>
         </xsd:schema>
     </wsdl:types>
 </wsdl:definitions>

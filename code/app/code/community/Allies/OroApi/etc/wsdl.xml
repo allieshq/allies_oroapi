@@ -16,6 +16,27 @@
                     <element name='surcharge_amount' type='xsd:string' minOccurs='0' />
                 </all>
             </complexType>
+            
+            <complexType name="salesOrderAddressEntity">
+                <all>
+                    <element name="street2" type="xsd:string" minOccurs="0" />
+                    <element name="street3" type="xsd:string" minOccurs="0" />
+                </all>
+            </complexType>
+            
+            <complexType name="shoppingCartAddressEntity">
+                <all>
+                    <element name="street2" type="xsd:string" minOccurs="0" />
+                    <element name="street3" type="xsd:string" minOccurs="0" />
+                </all>
+            </complexType>
+            
+            <complexType name="customerAddressEntityItem">
+                <all>
+                    <element name="street2" type="xsd:string" minOccurs="0" />
+                    <element name="street3" type="xsd:string" minOccurs="0" />
+                </all>
+            </complexType>
         </schema>
     </types>
 </definitions>

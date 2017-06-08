@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Allies_OroApi>
-            <version>1.0.0</version>
+            <version>1.1.0</version>
         </Allies_OroApi>
     </modules>
     
@@ -16,6 +16,12 @@
                 <rewrite>
                     <sales_order_api>Allies_OroApi_Model_Sales_Order_Api</sales_order_api>
                     <sales_order_api_v2>Allies_OroApi_Model_Sales_Order_Api_V2</sales_order_api_v2>
+                    
+                    <sales_quote_api>Allies_OroApi_Model_Sales_Quote_Api</sales_quote_api>
+                    <sales_quote_api_v2>Allies_OroApi_Model_Sales_Quote_Api_V2</sales_quote_api_v2>
+                    
+                    <customer_address_api>Allies_OroApi_Model_Customer_Address_Api</customer_address_api>
+                    <customer_address__api_v2>Allies_OroApi_Model_Customer_Address_Api_V2</customer_address__api_v2>
                 </rewrite>
             </oro_api>
         </models>

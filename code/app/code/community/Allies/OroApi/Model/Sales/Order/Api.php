@@ -11,6 +11,18 @@ class Allies_OroApi_Model_Sales_Order_Api
     {
         $orderData = parent::_getOrderData($order);
         
+        foreach (array('shipping_address', 'billing_address') as $k) {
+            $orderData[$k]['street2'] = '';
+            $orderData[$k]['street3'] = '';
+            if (isset($orderData[$k]['street']) && is_string($orderData[$k]['street'])) {
+                $streets = array_filter(array_map('trim', explode(PHP_EOL, $orderData[$k]['street'])));
+
+                $orderData[$k]['street'] = (!empty($streets)) ? array_shift($streets) : '';
+                $orderData[$k]['street2'] = (!empty($streets)) ? array_shift($streets) : '';
+                $orderData[$k]['street3'] = (!empty($streets)) ? implode(', ', $streets) : '';
+            }
+        }
+        
         if (!isset($orderData['attributes'])) {
             $orderData['attributes'] = array();
         }
